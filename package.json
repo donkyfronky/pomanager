@@ -1,0 +1,28 @@
+{
+  "name": "notifiche",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "event-emitter": "^0.3.5",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "gettext-parser": "^1.3.0",
+    "mongoose": "^4.13.5"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "old_start": "[ \"$NODE_ENV\" = \"dev\" ] && supervisor --debug -n error -w . index.js || supervisor index_cluster.js",
+    "alternative_pm2_start": "PM2_KILL_TIMEOUT=60000 [ \"$NODE_ENV\" = \"dev\" ] && pm2 start index.js --no-autorestart --no-daemon --watch --node-args=\"--debug=5858\" || pm2 start index.js -i 0 --no-daemon --name=\"notifiche\"",
+    "start": "pm2 start app_$NODE_ENV.json --no-daemon"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha-logger": "^1.0.1",
+    "moment": "^2.10.6",
+    "socket.io-client": "^1.3.7"
+  }
+}
