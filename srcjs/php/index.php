@@ -1,210 +1,55 @@
-<html>
-<body>
-<div id="container">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="PoManager">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>PoManager</title>
+  <link href="index.fonts.css" rel="stylesheet"><link href="index.styles.css" rel="stylesheet"></head>
 
+  <!-- BODY options, add following classes to body to change options
 
-    <h2>Users</h2>
-    <ul id="users_list"></ul>
-    <form id="users">
-        <input type="text" name="user_name" id="user_name">
-        <input type="submit" />
-        <span id="error_user"></span>
-    </form>
+  // Header options
+  1. '.header-fixed'					- Fixed Header
 
+  // Brand options
+  1. '.brand-minimized'       - Minimized brand (Only symbol)
 
-    <h2>Tasks</h2>
-    <ul id="tasks_list"></ul>
-    <form id="tasks">
-        <input type="text" name="task_name" id="task_name">
-        <input type="submit" />
-        <span id="error_task"></span>
-    </form>
+  // Sidebar options
+  1. '.sidebar-fixed'					- Fixed Sidebar
+  2. '.sidebar-hidden'				- Hidden Sidebar
+  3. '.sidebar-off-canvas'		- Off Canvas Sidebar
+  4. '.sidebar-minimized'			- Minimized Sidebar (Only icons)
+  5. '.sidebar-compact'			  - Compact Sidebar
 
+  // Aside options
+  1. '.aside-menu-fixed'			- Fixed Aside Menu
+  2. '.aside-menu-hidden'			- Hidden Aside Menu
+  3. '.aside-menu-off-canvas'	- Off Canvas Aside Menu
 
+  // Breadcrumb options
+  1. '.breadcrumb-fixed'			- Fixed Breadcrumb
 
-    <h2>Tasks to users</h2>
-    <form id="tasks_to_user">
+  // Footer options
+  1. '.footer-fixed'					- Fixed footer
 
-        <select id="sel_users"></select>
-        <select id="sel_tasks"></select>
-        <div id="user_had_to"></div>
-    </form>
+  -->
 
+  <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-</div>
-<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="http"></script>
-<script>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-
-    var jwt = 'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVhMjI3M2M4ODQ1NDIzMDA5NDA0M2Q0MSIsImhhc2hfcGFzc3dvcmQiOiIkMmEkMTAkNjJtVnJsZlVZSmxSU2x2LlZqd2tHdVRUM3ZER0pBU0UybkpJLkVncGVYaFE1VjRzZ3YzL0siLCJuaWNrIjoibWFyaW8iLCJmdWxsTmFtZSI6Ik1hcmlvIEJyZWdhIiwiZW1haWwiOiJtYXJpby5icmVnYUBsb2wuaXQiLCJfX3YiOjAsIm93blRhc2tzIjpbXSwiYWRtaW4iOmZhbHNlLCJjcmVhdGVkIjoiMjAxNy0xMi0wMlQwOTozNTowNC43NTBaIiwic3RhdHVzIjpbImFjdGl2ZSJdfSwiaWF0IjoxNTEyMjA3NTU3fQ.If3UkNAB8m2iuPpRiv_VFqPNL1iqcrIjCuEiGVsqdf4';
-    var users_saved = {};
-    var tasks_saved = {};
-
-    var selected_user = null;
-    var selected_task = null;
-
-    var ul_users = $('#users_list');
-    var ul_tasks = $('#tasks_list');
-
-    function loadUserSelects(){
-        var sel_users = $('#sel_users');
-
-        loadSelect(sel_users,users_saved);
-    }
-
-    function loadTaskSelects(){
-        var sel_tasks = $('#sel_tasks');
-
-        loadSelect(sel_tasks,tasks_saved);
-    }
-
-
-    function loadSelect(selectElement,dataList){
-
-        selectElement.html('');
-
-        selectElement.append('<option value="0">Seleziona</option>')
-
-        $.each(dataList,function(index,data){
-            selectElement.append('<option value="'+data._id+'">'+data.name+'</option>')
-        });
-    }
-
-    function loadUl(elementHtml,dataList){
-        elementHtml.html('');
-        $.each(dataList, function( index, data ) {
-            elementHtml.append('<li>'+data.name+'['+data.Created_date+']</li>');
-        });
-    }
-
-    function loadUsers(){
-        ul_users.html('');
-        $.ajax({
-            url: "/api/users",
-            data: {
-            },
-            headers: {"Authorization": jwt},
-            success: function( users ) {
-                users_saved = users;
-                loadUl(ul_users,users_saved);
-                loadUserSelects();
-            }
-        });
-    }
-
-    function loadTasks(){
-        ul_tasks.html('');
-        $.ajax({
-            url: "http://localhost:8080/tasks",
-            data: {
-            },
-            headers: {"Authorization": jwt},
-            success: function( tasks ) {
-                tasks_saved = tasks;
-                loadUl(ul_tasks,tasks_saved);
-                loadTaskSelects();
-            }
-        });
-    }
-
-
-
-    $('#users').on('submit',function(evt){
-        evt.preventDefault();
-        var new_user = $('#user_name').val();
-        var span_error_user = $('#error_user');
-
-        var error_user = '';
-        if(new_user===''){
-            error_user = 'il nome utente non può essere vuoto!';
-            span_error_user.html(error_user);
-            return;
-        }
-
-        $.ajax({
-            url: "http://localhost:8080/users",
-            type: 'post',
-            data: {
-                name:new_user
-            },
-            headers: {"Authorization": jwt},
-            success: function( users ) {
-                users_saved.push(users);
-                loadUsers(ul_users);
-
-            }
-        });
-
-    });
-
-    $('#tasks').on('submit',function(evt){
-        evt.preventDefault();
-        var new_task = $('#task_name').val();
-        var span_error_task = $('#task_user');
-
-        var error_task = '';
-        if(new_task===''){
-            error_task = 'il nome utente non può essere vuoto!';
-            span_error_task.html(error_task);
-            return;
-        }
-
-        $.ajax({
-            url: "http://localhost:8080/tasks",
-            type: 'post',
-            data: {
-                name:new_task
-            },
-            headers: {"Authorization": jwt},
-            success: function( tasks ) {
-                tasks_saved.push(tasks);
-                loadTasks(ul_tasks);
-
-            }
-        });
-
-    });
-
-    $('#sel_users').on('change',function(evt){
-
-        var that_user_id = $(this).val();
-        var user_task_list = $('#user_had_to');
-
-
-        selected_user = users_saved.filter(function( obj ) {
-            return obj._id===that_user_id;
-        });
-
-        if(selected_user!==[]) {
-            selected_user = selected_user[0];
-            $.each(selected_user.ownTasks, function (index, task) {
-                user_task_list.append('<p>- ' + task.name + '</p>');
-            });
-        }
-    });
-
-    $('#sel_tasks').on('change',function(evt){
-
-        var that_task_id = $(this).val();
-
-        selected_task = tasks_saved.filter(function( obj ) {
-            return obj._id===that_task_id;
-        });
-
-        if(selected_user!==[]) {
-            selected_task = selected_task[0];
-        }
-    });
-
-
-
-    //http://localhost/task/search/?name=ro
-    $(document).ready(function(){
-        loadUsers();
-        loadTasks();
-
-    });
-</script>
-</body>
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+  <script type="text/javascript" src="index.bundle.js"></script></body>
 </html>

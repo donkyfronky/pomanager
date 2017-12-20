@@ -18,7 +18,8 @@ module.exports = function(app) {
         .get(todoList.search_a_task);
 
     app.route('/users')
-        .get(userController.loginRequired,userController.list_all_users);
+        //.get(userController.loginRequired,userController.list_all_users);
+        .get(userController.list_all_users);
 
     app.route('/auth/register')
         .post(userController.register);

@@ -1,33 +1,147 @@
-'use strict';
+const webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-/* eslint no-console: "off" */
-const webpackConfigs = require('./webpack');
-const defaultConfig = 'dev';
+const extractCSS = new ExtractTextPlugin('[name].fonts.css');
+const extractSCSS = new ExtractTextPlugin('[name].styles.css');
 
-module.exports = (configName) => {
+const BUILD_DIR = path.resolve(__dirname, 'src/../../php');
+const SRC_DIR = path.resolve(__dirname, 'src');
 
-  // If there was no configuration give, assume default
-  const requestedConfig = configName || defaultConfig;
+//const { entry } = generateAppsConfig( ['babel-polyfill','whatwg-fetch']);
 
-  // Return a new instance of the webpack config
-  // or the default one if it cannot be found.
-  let LoadedConfig = defaultConfig;
+console.log('BUILD_DIR', BUILD_DIR);
+console.log('SRC_DIR', SRC_DIR);
 
-  if (webpackConfigs[requestedConfig] !== undefined) {
-    LoadedConfig = webpackConfigs[requestedConfig];
-  } else {
-    console.warn(`
-      Provided environment "${configName}" was not found.
-      Please use one of the following ones:
-      ${Object.keys(webpackConfigs).join(' ')}
-    `);
-    LoadedConfig = webpackConfigs[defaultConfig];
+module.exports = (env = {}) => {
+  return {
+    entry: {
+      index: [SRC_DIR + '/index.js']
+    },
+    output: {
+      path: BUILD_DIR,
+      filename: '[name].bundle.js'
+    },
+    // watch: true,
+    //  devtool: 'cheap-module-source-map',
+    //devtool: env.prod ? 'source-map' : 'cheap-module-eval-source-map',
+    devServer: {
+      contentBase: BUILD_DIR,
+      //   port: 9001,
+      compress: true,
+      hot: true,
+      open: true
+    },
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              cacheDirectory: true,
+              presets: ['react', 'env']
+            }
+          }
+        },
+        {
+          test: /\.html$/,
+          loader: 'html-loader'
+        },
+        {
+          test: /\.(scss)$/,
+          use: ['css-hot-loader'].concat(extractSCSS.extract({
+            fallback: 'style-loader',
+            use: [
+              {
+                loader: 'css-loader',
+                options: {alias: {'../img': '../public/img'},sourceMap: false}
+              },
+              {
+                loader: 'sass-loader'
+              }
+            ]
+          }))
+        },
+        {
+          test: /\.css$/,
+          use: extractCSS.extract({
+            fallback: 'style-loader',
+              use: [
+                  {
+                      loader: 'css-loader',
+                      options: {sourceMap: false}
+                  }
+                  ]
+
+          })
+        },
+        {
+          test: /\.(png|jpg|jpeg|gif|ico)$/,
+          use: [
+            {
+              // loader: 'url-loader'
+              loader: 'file-loader',
+              options: {
+                name: './img/[name].[hash].[ext]'
+              }
+            }
+          ]
+        },
+        {
+          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+          loader: 'file-loader',
+          options: {
+            name: './fonts/[name].[hash].[ext]'
+          }
+        }]
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                comparisons: true,
+                conditionals: true,
+                dead_code: true,
+               // drop_console: true, // Keep server logs
+                drop_debugger: true,
+                evaluate: true,
+                if_return: true,
+                join_vars: true,
+                screw_ie8: false,
+                sequences: true,
+                unused: true,
+                warnings: false,
+            },
+            sourceMap: false,
+            output: {
+                comments: false,
+            },
+        }),
+        new webpack.NoEmitOnErrorsPlugin(),
+      new webpack.NamedModulesPlugin(),
+      extractCSS,
+      extractSCSS,
+      new HtmlWebpackPlugin(
+        {
+          inject: true,
+          filename: 'index.php',
+          template: './public/index.php'
+        }
+      ),
+      new CopyWebpackPlugin([
+          {from: './public/img', to: 'img'}
+        ],
+        {copyUnmodified: false}
+      )
+    ]
   }
-
-  const loadedInstance = new LoadedConfig();
-
-  // Set the global environment
-  process.env.NODE_ENV = loadedInstance.env;
-
-  return loadedInstance.config;
 };
