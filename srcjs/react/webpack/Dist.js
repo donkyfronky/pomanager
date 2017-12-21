@@ -28,6 +28,11 @@ class WebpackDistConfig extends WebpackBaseConfig {
           }
         }),
         new webpack.optimize.AggressiveMergingPlugin(),
+          new webpack.optimize.CommonsChunkPlugin({
+              name: "commons",
+              filename: "./build/commons.js",
+              minChunks: (m) => /node_modules\/(?:react-redux|redux-thunk|redux-form|react|reactstrap|wretch)/.test(m.context)
+          }),
         new webpack.optimize.UglifyJsPlugin({
           compress: {
             comparisons: true,

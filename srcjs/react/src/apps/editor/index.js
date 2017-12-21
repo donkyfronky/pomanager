@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import store from './store/configureStore'
 import injectTapEventPlugin from 'react-tap-event-plugin'
+import { BrowserRouter } from 'react-router-dom'
 
 import Full from './components/Full'
 
@@ -18,9 +19,9 @@ if (!module.hot) {
 
 ReactDOM.render(
   <Provider store={store}>
-    <AppContainer>
+      <BrowserRouter>
         <Full/>
-    </AppContainer>
+      </BrowserRouter>
   </Provider>, document.getElementById('container')
 );
 

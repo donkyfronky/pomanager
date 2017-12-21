@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom'
 import * as GlobalActions from '../actions/globalActions';
 
 
@@ -64,10 +65,11 @@ export class CustomMenu extends Component {
     render() {
 
         const listItems = this.props.menu_routes.map((item) =>
-            <li className={item.href===this.props.actual_route?'active':'normal'}>
-                <a href={"#"} data-href={item.href} onClick={this.menuClicked}>
+            <li >
+                <Link activeClassName={'active'} to={item.href}>
                     <i className={item.icon}></i>
-                    <span >{item.value}</span></a>
+                    <span >{item.value}</span>
+                </Link>
             </li>
         );
 
