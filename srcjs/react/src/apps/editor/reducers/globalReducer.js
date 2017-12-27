@@ -22,6 +22,11 @@ var defaultState = {
             icon:'icon-grid',
             value:'Users'
         },
+        {
+            href:'/dashboard',
+            icon:'icon-grid',
+            value:'Dashboard'
+        },
     ]
   },
     actual_route:'/'

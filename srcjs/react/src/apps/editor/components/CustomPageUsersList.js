@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as GlobalActions from '../actions/globalActions';
 import { Table } from 'reactstrap';
 
-export class CustomPageDashboard extends Component {
+export class CustomPageUsersList extends Component {
     render() {
         return (
             <div>
@@ -19,13 +19,13 @@ export class CustomPageDashboard extends Component {
                 <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
+                    <td>Jojo</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
+                    <td>Frodo</td>
                     <td>Thornton</td>
                     <td>@fat</td>
                 </tr>
@@ -71,4 +71,4 @@ const mapStateToProps = (state) => {
 
 
 // - Connect component to redux store
-export default connect(mapStateToProps, mapDispatchToProps)(CustomPageDashboard)
+export default connect(mapStateToProps, mapDispatchToProps)(CustomPageUsersList)

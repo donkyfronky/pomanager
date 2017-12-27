@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import CustomUserNavbar from './CustomUserNavbar';
 import CustomMenu from './CustomMenu';
 import { Table } from 'reactstrap';
-import CustomPageDashboard from './CustomPageDashboard';
+import CustomPage from './CustomPage';
 
 
 export class CustomContainer extends Component {
@@ -13,7 +13,7 @@ export class CustomContainer extends Component {
         return (
             <div className={"page"}>
                 <CustomUserNavbar/>
-                <CustomPageDashboard/>
+                <CustomPage/>
             </div>
         )
     }

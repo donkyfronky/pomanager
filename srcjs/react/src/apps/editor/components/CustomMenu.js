@@ -66,7 +66,7 @@ export class CustomMenu extends Component {
 
         const listItems = this.props.menu_routes.map((item) =>
             <li >
-                <Link activeClassName={'active'} to={item.href}>
+                <Link to={item.href}>
                     <i className={item.icon}></i>
                     <span >{item.value}</span>
                 </Link>
