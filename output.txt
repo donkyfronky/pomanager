@@ -1,13 +1,0 @@
-Starting pomanager-node-php-fpm ... 
-Starting pomanager-node-php-fpm
-Creating pomanager-mysql ... 
-Starting pomanager-node-redis ... 
-Starting pomanager-node-redis
-Starting pomanager-node-webserver ... 
-Starting pomanager-node-webserver
-Creating pomanager-mysql
-[1A[2KCreating pomanager-mysql ... [31merror[0m[1B
-ERROR: for pomanager-mysql  Cannot create container for service mysql: Conflict. The container name "/pomanager-mysql" is already in use by container "a5be44a3b555f66c398f8c8478af37d87969a4745588ad19538f6d8d65d46899". You have to remove (or rename) that container to be able to reuse that name.
-[1A[2KStarting pomanager-node-php-fpm ... [32mdone[0m[1B[1A[2KStarting pomanager-node-webserver ... [32mdone[0m[1B[1A[2KStarting pomanager-node-redis ... [32mdone[0m[1B
-ERROR: for mysql  Cannot create container for service mysql: Conflict. The container name "/pomanager-mysql" is already in use by container "a5be44a3b555f66c398f8c8478af37d87969a4745588ad19538f6d8d65d46899". You have to remove (or rename) that container to be able to reuse that name.
-Encountered errors while bringing up the project.
