@@ -1,0 +1,14 @@
+{
+    "require": {
+        "slim/slim": "^3.0",
+        "atlas/orm": "~2.0"
+    },
+    "require-dev": {
+        "atlas/cli": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmartEditorPo\\": "src/App/"
+        }
+    }
+}
