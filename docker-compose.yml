@@ -8,56 +8,42 @@ services:
       image: redis:alpine
       container_name: pomanager-node-redis
 
-    node:
-      build: node
-      container_name: pomanager-node-node
-      stdin_open: true
-      tty: true
-      ports:
-       - "1070:9080"
-       - "5858:5858"
-       - "8082:80"
-       - "3001:3001"
-      volumes:
-       - ./srcjs/:/usr/src/app/
-      environment:
-       - NODE_ENV=dev
-
-     
-    mongo:
-      image: mongo:3.4.10-jessie  
-      container_name: pomanager-node-mongo
-      volumes:
-      - ./datamongo:/data/db      
-      ports:
-        - "27017:27017"
-      
-    mongoclient:
-      image: mongo-express:latest
-      container_name: pomanager-node-mongo-client
-      depends_on:
-        - mongo
-      environment:
-       - ME_CONFIG_MONGODB_ADMINUSERNAME=root
-       - ME_CONFIG_MONGODB_ADMINPASSWORD=root
-      ports:
-        - "8081:8081"
-
     webserver:
       image: nginx:latest
       container_name: pomanager-node-webserver
       working_dir: /application
       volumes:
-          - ./srcjs/php:/application
+          - ./sourcecode:/application
           - ./phpdocker/nginx/:/etc/nginx/conf.d/
       ports:
        - "80:80"
-
+    mysql:
+      image: mysql:8.0
+      container_name: pomanager-node-mysql
+      working_dir: /application
+      volumes:
+        - .:/application
+      environment:
+        - MYSQL_ROOT_PASSWORD=r083rt0
+        - MYSQL_DATABASE=indici
+        - MYSQL_USER=indici
+        - MYSQL_PASSWORD=indici
+      ports:
+        - "3306:3306"
     php-fpm:
       build: phpdocker/php-fpm
       container_name: pomanager-node-php-fpm
       working_dir: /application
       volumes:
-        - ./srcjs/php:/application
-        - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.1/fpm/conf.d/99-overrides.ini        
+        - ./sourcecode:/application
+        - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.1/fpm/conf.d/99-overrides.ini   
+        
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      container_name: pomanager-node-phpmyadmin
+      restart: always
+      environment:
+       - PMA_HOSTS=mysql,127.0.0.1
+      ports:
+       - "8081:80"
   
