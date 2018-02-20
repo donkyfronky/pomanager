@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit004bc1fba52380464deca763d3e63fbf
+class ComposerStaticInit6a27e92b9ecc04d16858e834cfbbcd21
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
@@ -22,6 +22,10 @@ class ComposerStaticInit004bc1fba52380464deca763d3e63fbf
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
         ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
         'I' => 
         array (
             'Interop\\Container\\' => 18,
@@ -33,12 +37,8 @@ class ComposerStaticInit004bc1fba52380464deca763d3e63fbf
         'A' => 
         array (
             'Aura\\Sql\\' => 9,
-            'Aura\\SqlSchema\\' => 15,
             'Aura\\SqlQuery\\' => 14,
-            'Aura\\Cli\\_Config\\' => 17,
-            'Aura\\Cli\\' => 9,
             'Atlas\\Orm\\' => 10,
-            'Atlas\\Cli\\' => 10,
         ),
     );
 
@@ -63,6 +63,10 @@ class ComposerStaticInit004bc1fba52380464deca763d3e63fbf
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
@@ -75,29 +79,13 @@ class ComposerStaticInit004bc1fba52380464deca763d3e63fbf
         array (
             0 => __DIR__ . '/..' . '/aura/sql/src',
         ),
-        'Aura\\SqlSchema\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/aura/sqlschema/src',
-        ),
         'Aura\\SqlQuery\\' => 
         array (
             0 => __DIR__ . '/..' . '/aura/sqlquery/src',
         ),
-        'Aura\\Cli\\_Config\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/aura/cli/config',
-        ),
-        'Aura\\Cli\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/aura/cli/src',
-        ),
         'Atlas\\Orm\\' => 
         array (
             0 => __DIR__ . '/..' . '/atlas/orm/src',
-        ),
-        'Atlas\\Cli\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/atlas/cli/src',
         ),
     );
 
@@ -114,9 +102,9 @@ class ComposerStaticInit004bc1fba52380464deca763d3e63fbf
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit004bc1fba52380464deca763d3e63fbf::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit004bc1fba52380464deca763d3e63fbf::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit004bc1fba52380464deca763d3e63fbf::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6a27e92b9ecc04d16858e834cfbbcd21::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6a27e92b9ecc04d16858e834cfbbcd21::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit6a27e92b9ecc04d16858e834cfbbcd21::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
