@@ -3,23 +3,19 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var TaskSchema = new Schema({
-    name: {
+var MsgidSchema = new Schema({
+    msgid: {
         type: String,
         required: 'Kindly enter the name of the task',
         index: true
     },
+    msgid_plural: {
+        type: String
+    },
     Created_date: {
         type: Date,
         default: Date.now
-    },
-    status: {
-        type: [{
-            type: String,
-            enum: ['pending', 'ongoing', 'completed']
-        }],
-        default: ['pending']
     }
 });
 
-module.exports = mongoose.model('Tasks', TaskSchema);
+module.exports = mongoose.model('Msgid', MsgidSchema);
