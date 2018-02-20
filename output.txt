@@ -1,0 +1,1023 @@
+Starting pomanager-node-php-fpm ... 
+Starting pomanager-node-phpmyadmin ... 
+Starting pomanager-node-php-fpm
+Starting pomanager-node-phpmyadmin
+Starting pomanager-node-webserver ... 
+Starting pomanager-node-webserver
+Starting pomanager-node-mysql ... 
+Starting pomanager-node-mysql
+Starting pomanager-node-redis ... 
+Starting pomanager-node-redis
+[1A[2KStarting pomanager-node-php-fpm ... [32mdone[0m[1B[1A[2KStarting pomanager-node-phpmyadmin ... [32mdone[0m[1B[1A[2KStarting pomanager-node-webserver ... [32mdone[0m[1B[1A[2KStarting pomanager-node-redis ... [32mdone[0m[1B[1A[2KStarting pomanager-node-mysql ... [32mdone[0m[1BAttaching to pomanager-node-php-fpm, pomanager-node-phpmyadmin, pomanager-node-webserver, pomanager-node-redis, pomanager-node-mysql
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:24,681 CRIT Supervisor running as root (no user in config file)
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:24,682 WARN Included extra file "/etc/supervisor.d/nginx.ini" during parsing
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:24,682 WARN Included extra file "/etc/supervisor.d/php.ini" during parsing
+[36mpomanager-node-php-fpm |[0m [20-Feb-2018 19:51:24] NOTICE: fpm is running, pid 9
+[33mpomanager-node-phpmyadmin |[0m Unlinking stale socket /run/supervisord.sock
+[36mpomanager-node-php-fpm |[0m [20-Feb-2018 19:51:24] NOTICE: ready to handle connections
+[36mpomanager-node-php-fpm |[0m [20-Feb-2018 19:51:24] NOTICE: systemd monitor interval set to 10000ms
+[35mpomanager-node-redis |[0m 1:C 20 Feb 19:51:24.605 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[35mpomanager-node-redis |[0m 1:C 20 Feb 19:51:24.605 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[35mpomanager-node-redis |[0m 1:C 20 Feb 19:51:24.605 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[35mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 * Running mode=standalone, port=6379.
+[35mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[35mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # Server initialized
+[35mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[35mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[35mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 * DB loaded from disk: 0.000 seconds
+[35mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 * Ready to accept connections
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:24,998 INFO RPC interface 'supervisor' initialized
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:24,998 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:24,998 INFO supervisord started with pid 1
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.053770Z 0 [Note] Basedir set to /usr/
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.053924Z 0 [Warning] The syntax '--symbolic-links/-s' is deprecated and will be removed in a future release
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.053990Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.054029Z 0 [Note] /usr/sbin/mysqld (mysqld 8.0.3-rc-log) starting as process 1 ...
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.055788Z 0 [Warning] No argument was provided to --log-bin, and --log-bin-index was not used; so replication may break when this MySQL server acts as a master and has his hostname changed!! Please use '--log-bin=2381970f91f1-bin' to avoid this problem.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.064320Z 0 [Note] InnoDB: Using Linux native AIO
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.065453Z 0 [Note] Plugin 'FEDERATED' is disabled.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.075699Z 1 [Note] InnoDB: PUNCH HOLE support available
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.075985Z 1 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.076010Z 1 [Note] InnoDB: Uses event mutexes
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.076034Z 1 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.076057Z 1 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.078720Z 1 [Note] InnoDB: Number of pools: 1
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.079923Z 1 [Note] InnoDB: Using CPU crc32 instructions
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.082884Z 1 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.096800Z 1 [Note] InnoDB: Completed initialization of buffer pool
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.099490Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.117022Z 1 [Note] InnoDB: Using 'tablespaces.open.2' max LSN: 26369978
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.123945Z 1 [Note] InnoDB: Applying a batch of 0 redo log records ...
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.123986Z 1 [Note] InnoDB: Apply batch completed!
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.126442Z 1 [Note] InnoDB: Opened 2 existing undo tablespaces.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.154996Z 1 [Note] InnoDB: Creating shared tablespace for temporary tables
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.155078Z 1 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.202090Z 1 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.211081Z 1 [Note] InnoDB: Created 128 and tracked 128 new rollback segment(s) in the temporary tablespace. 128 are now active.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.211442Z 1 [Note] InnoDB: 8.0.3 started; log sequence number 26372230
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.304747Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.306526Z 0 [Note] InnoDB: Buffer pool(s) load completed at 180220 19:51:25
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.329535Z 1 [Note] Found data dictionary with version 1
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.376371Z 0 [Note] InnoDB: DDL log recovery : begin
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.376548Z 0 [Note] InnoDB: DDL log recovery : end
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.376676Z 0 [Note] InnoDB: Waiting for purge to start
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.443223Z 0 [Warning] You have not provided a mandatory server-id. Servers in a replication topology must have unique server-ids. Please refer to the proper server start-up parameters documentation.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.452335Z 0 [Note] Found ca.pem, server-cert.pem and server-key.pem in data directory. Trying to enable SSL support using them.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.453384Z 0 [Warning] CA certificate ca.pem is self signed.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.458951Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.459026Z 0 [Note] IPv6 is available.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.459047Z 0 [Note]   - '::' resolves to '::';
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.459110Z 0 [Note] Server socket created on IP: '::'.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.485609Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.485646Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.485684Z 0 [Warning] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.485696Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.485715Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.497391Z 0 [Warning] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.497428Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.508441Z 4 [Note] Event Scheduler: scheduler thread started with id 4
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:25.508765Z 0 [Note] /usr/sbin/mysqld: ready for connections. Version: '8.0.3-rc-log'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:26,002 INFO spawned: 'php-fpm' with pid 15
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:26,006 INFO spawned: 'nginx' with pid 16
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:27,047 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[33mpomanager-node-phpmyadmin |[0m 2018-02-20 19:51:27,047 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:37.311749Z 7 [Note] Access denied for user 'root'@'172.20.0.1' (using password: NO)
+[31mpomanager-node-mysql |[0m 2018-02-20T19:51:48.198945Z 8 [Note] Aborted connection 8 to db: 'unconnected' user: 'root' host: '172.20.0.1' (Got an error reading communication packets)
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:09:35 +0000 "GET /index.php" 404
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:09:35 +0000] "GET / HTTP/1.1" 404 27 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:09:35 +0000 "GET /index.php" 404
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:09:35 +0000] "GET /favicon.ico HTTP/1.1" 404 27 "http://www.pomanager.it/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:09:45 +0000] "GET /hello/ HTTP/1.1" 404 27 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:09:45 +0000 "GET /index.php" 404
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:10:53 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:10:53 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:29 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:29 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:29 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:30 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:30 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:30 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:30 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:30 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:30 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:30 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:30 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:30 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:31 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:31 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:31 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:31 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:31 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:32 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:32 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:32 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:32 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:32 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:33 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:33 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:33 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:33 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:33 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:33 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:33 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:33 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:34 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:34 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:34 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:34 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:34 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:34 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:34 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:34 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:34 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:34 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:35 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:35 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:35 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:35 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:35 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:35 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:35 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:35 +0000] "GET /hello/ HTTP/1.1" 500 2808 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:17:57 +0000 "GET /index.php" 200
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:17:57 +0000] "GET /hello/ HTTP/1.1" 200 1502 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:55 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:55 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:56 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:56 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:56 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:56 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:56 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:56 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:57 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:57 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:57 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:57 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:57 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:57 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:57 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:57 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:57 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:57 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:58 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:58 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:58 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:58 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:58 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:58 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:58 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:58 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:59 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:59 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:24:59 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:24:59 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:30 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:30 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:31 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:31 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:31 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:31 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:31 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:31 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:32 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:32 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:32 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[36mpomanager-node-php-fpm |[0m 172.20.0.4 -  20/Feb/2018:20:26:32 +0000 "GET /index.php" 500
+[32mpomanager-node-webserver |[0m 172.20.0.1 - - [20/Feb/2018:20:26:32 +0000] "GET /hello/ HTTP/1.1" 500 2318 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" "-"
+[32mpomanager-node-webserver exited with code 137
+[0m[35mpomanager-node-redis exited with code 137
+[0m[36mpomanager-node-php-fpm exited with code 137
+[0m[34mpomanager-node-redis |[0m 1:C 28 Nov 20:34:41.369 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:34:41.369 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:34:41.369 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:34:41.371 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:34:41.371 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:34:41.371 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:34:41.371 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:34:41.371 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:34:41.372 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1511902085) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:05.660 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:05.660 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:05.664 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:05.664 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:48:08.733 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:48:08.733 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:48:08.733 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:08.735 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:08.735 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:08.735 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:08.735 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:08.735 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:08.741 * DB loaded from disk: 0.006 seconds
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:48:08.741 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1511902352) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:32.927 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:32.927 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:32.945 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:32.945 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:52:36.071 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:52:36.071 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:52:36.071 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:36.072 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:36.072 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:36.072 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:36.073 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:36.073 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:36.073 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:52:36.073 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1511902562) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:56:02.578 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:56:02.578 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:56:02.582 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:56:02.582 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:58:25.993 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:58:25.993 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:58:25.993 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:58:26.011 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:58:26.011 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:58:26.011 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:58:26.011 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:58:26.011 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:58:26.011 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:58:26.011 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1511902793) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:53.869 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:53.869 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:53.875 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:53.875 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:59:57.347 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:59:57.347 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 28 Nov 20:59:57.347 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:57.348 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:57.348 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:57.348 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:57.348 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:57.348 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:57.348 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 28 Nov 20:59:57.348 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1511905543) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 21:45:43.940 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 28 Nov 21:45:43.940 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 28 Nov 21:45:43.946 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 28 Nov 21:45:43.946 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 29 Nov 20:27:39.244 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 29 Nov 20:27:39.244 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 29 Nov 20:27:39.244 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 29 Nov 20:27:39.246 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 20:27:39.246 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 20:27:39.246 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 29 Nov 20:27:39.246 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 20:27:39.246 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 20:27:39.246 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 29 Nov 20:27:39.246 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 29 Nov 21:00:10.163 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 29 Nov 21:00:10.163 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 29 Nov 21:00:10.163 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 29 Nov 21:00:10.165 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 21:00:10.165 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 21:00:10.165 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 29 Nov 21:00:10.165 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 21:00:10.165 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 29 Nov 21:00:10.165 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 29 Nov 21:00:10.165 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 01 Dec 19:30:49.678 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 19:30:49.678 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 19:30:49.678 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:30:49.682 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:30:49.682 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:30:49.682 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:30:49.682 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:30:49.683 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:30:49.684 * DB loaded from disk: 0.001 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:30:49.684 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512156660) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:31:00.613 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:31:00.613 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:31:00.660 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:31:00.660 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 19:32:33.881 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 19:32:33.881 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 19:32:33.881 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:32:33.882 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:32:33.882 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:32:33.882 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:32:33.882 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:32:33.882 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:32:33.882 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 19:32:33.882 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512160468) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:28.557 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:28.557 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:28.571 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:28.571 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:34:45.106 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:34:45.106 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:34:45.106 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:45.107 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:45.108 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:45.108 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:45.108 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:45.108 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:45.108 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:34:45.108 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:36:01.111 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:36:01.111 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:36:01.111 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:01.113 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:01.113 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:01.113 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:01.113 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:01.113 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:01.113 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:01.113 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512160617) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:57.673 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:57.673 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:57.684 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:36:57.684 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:37:11.060 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:37:11.060 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:37:11.060 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:37:11.062 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:37:11.062 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:37:11.062 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:37:11.062 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:37:11.062 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:37:11.062 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:37:11.062 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512160747) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:39:07.194 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:39:07.194 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:39:07.206 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:39:07.206 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:41:31.518 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:41:31.518 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 20:41:31.518 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:41:31.520 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:41:31.520 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:41:31.520 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:41:31.520 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:41:31.520 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:41:31.520 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 20:41:31.520 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512162095) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:35.509 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:35.509 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:35.516 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:35.516 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:01:48.328 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:01:48.328 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:01:48.328 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:48.330 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:48.330 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:48.330 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:48.330 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:48.330 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:48.330 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:01:48.330 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512162150) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:30.895 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:30.895 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:30.908 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:30.908 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:02:44.124 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:02:44.124 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:02:44.124 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:44.125 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:44.125 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:44.125 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:44.125 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:44.125 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:44.125 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:02:44.125 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512162279) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:39.962 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:39.962 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:39.969 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:39.969 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:04:54.456 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:04:54.456 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:04:54.456 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:54.457 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:54.458 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:54.458 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:54.458 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:54.458 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:54.458 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:04:54.458 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512162567) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:09:27.519 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:09:27.519 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:09:27.533 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:09:27.533 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:12:22.875 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:12:22.875 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:12:22.875 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:12:22.883 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:12:22.883 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:12:22.883 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:12:22.883 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:12:22.883 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:12:22.884 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:12:22.884 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512163322) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:02.422 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:02.422 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:02.429 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:02.430 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:22:15.072 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:22:15.072 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 01 Dec 21:22:15.072 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:15.074 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:15.074 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:15.074 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:15.074 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:15.074 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:15.074 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 01 Dec 21:22:15.074 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 02 Dec 07:29:40.479 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 07:29:40.479 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 07:29:40.479 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 07:29:40.482 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 07:29:40.482 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 07:29:40.482 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 07:29:40.482 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 07:29:40.482 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 07:29:40.482 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 07:29:40.482 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512202552) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:15:52.275 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:15:52.275 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:15:52.282 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:15:52.282 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 02 Dec 08:22:46.303 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 08:22:46.303 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 08:22:46.303 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:22:46.305 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:22:46.305 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:22:46.305 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:22:46.305 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:22:46.305 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:22:46.305 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:22:46.305 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512204153) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:34.092 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:34.092 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:34.099 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:34.099 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 02 Dec 08:42:47.051 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 08:42:47.051 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 08:42:47.051 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:47.054 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:47.054 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:47.054 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:47.054 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:47.054 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:47.054 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 08:42:47.054 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512205333) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:02:13.986 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:02:13.986 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:02:14.000 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:02:14.000 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:04:13.771 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:04:13.771 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:04:13.771 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:13.776 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:13.776 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:13.776 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:13.776 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:13.776 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:13.778 * DB loaded from disk: 0.002 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:13.778 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:04:43.817 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:04:43.817 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:04:43.817 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:43.823 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:43.823 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:43.823 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:43.823 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:43.823 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:43.823 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:04:43.823 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512207476) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:37:56.142 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:37:56.142 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:37:56.149 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:37:56.149 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:38:09.241 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:38:09.245 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 09:38:09.245 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:38:09.247 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:38:09.247 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:38:09.247 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:38:09.247 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:38:09.247 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:38:09.259 * DB loaded from disk: 0.012 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 09:38:09.259 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512208977) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:02:57.961 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:02:57.961 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:02:57.967 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:02:57.967 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 02 Dec 10:03:11.892 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 10:03:11.892 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 10:03:11.892 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:03:11.894 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:03:11.895 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:03:11.895 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:03:11.895 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:03:11.895 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:03:11.895 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 10:03:11.895 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 02 Dec 12:53:26.854 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 12:53:26.854 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 12:53:26.854 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 12:53:26.856 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 12:53:26.856 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 12:53:26.857 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 12:53:26.857 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 12:53:26.857 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 12:53:26.857 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 12:53:26.857 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512236125) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 17:35:25.281 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 17:35:25.285 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 17:35:25.294 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 02 Dec 17:35:25.294 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 02 Dec 18:00:36.740 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 02 Dec 18:00:36.740 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 02 Dec 18:00:36.740 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:00:36.746 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:00:36.746 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:00:36.746 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:00:36.746 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:00:36.746 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:00:36.746 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:00:36.746 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512238905) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:21:45.130 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:21:45.130 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:21:45.145 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 02 Dec 18:21:45.145 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 03 Dec 13:02:24.684 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 03 Dec 13:02:24.685 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 03 Dec 13:02:24.685 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 03 Dec 13:02:24.688 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 03 Dec 13:02:24.688 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 03 Dec 13:02:24.688 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 03 Dec 13:02:24.688 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 03 Dec 13:02:24.688 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 03 Dec 13:02:24.688 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 03 Dec 13:02:24.688 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512310144) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 03 Dec 14:09:04.016 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 03 Dec 14:09:04.017 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 03 Dec 14:09:04.037 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 03 Dec 14:09:04.037 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 05 Dec 23:59:11.394 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 05 Dec 23:59:11.395 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 05 Dec 23:59:11.395 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:11.400 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:11.400 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:11.400 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:11.400 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:11.400 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:11.401 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:11.401 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 05 Dec 23:59:21.189 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 05 Dec 23:59:21.189 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 05 Dec 23:59:21.189 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:21.190 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:21.190 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:21.190 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:21.190 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:21.190 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:21.190 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 05 Dec 23:59:21.190 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1512520265) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 06 Dec 00:31:05.227 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 06 Dec 00:31:05.227 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 06 Dec 00:31:05.233 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 06 Dec 00:31:05.233 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 12 Dec 19:34:50.803 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 19:34:50.803 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 19:34:50.803 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:34:50.806 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:34:50.806 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:34:50.806 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:34:50.806 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:34:50.806 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:34:50.806 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:34:50.806 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513108128) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:48:48.978 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:48:48.978 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:48:48.983 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:48:48.983 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 12 Dec 19:49:03.045 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 19:49:03.045 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 19:49:03.045 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:49:03.048 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:49:03.048 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:49:03.048 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:49:03.048 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:49:03.049 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:49:03.049 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 19:49:03.049 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513108932) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:02:12.711 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:02:12.712 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:02:12.721 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:02:12.721 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:03:56.278 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:03:56.278 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:03:56.278 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:03:56.279 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:03:56.279 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:03:56.279 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:03:56.279 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:03:56.279 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:03:56.279 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:03:56.279 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513109063) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:23.265 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:23.265 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:23.272 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:23.272 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:04:36.104 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:04:36.104 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:04:36.104 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:36.106 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:36.106 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:36.106 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:36.106 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:36.106 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:36.106 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:04:36.106 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:13:26.370 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:13:26.370 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:13:26.370 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:13:26.376 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:13:26.376 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:13:26.376 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:13:26.376 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:13:26.376 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:13:26.376 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:13:26.376 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513109648) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:08.713 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:08.713 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:08.721 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:08.721 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:14:33.056 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:14:33.056 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 20:14:33.057 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:33.058 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:33.058 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:33.058 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:33.058 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:33.058 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:33.058 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:14:33.058 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513109779) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:16:19.075 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:16:19.075 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:16:19.088 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 12 Dec 20:16:19.088 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 12 Dec 21:09:17.614 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 21:09:17.614 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 21:09:17.614 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:17.616 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:17.616 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:17.616 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:17.616 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:17.616 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:17.616 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:17.616 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513112976) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:36.971 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:36.971 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:36.978 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:36.978 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 12 Dec 21:09:49.611 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 12 Dec 21:09:49.611 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 12 Dec 21:09:49.611 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:49.612 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:49.612 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:49.612 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:49.612 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:49.612 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:49.612 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:09:49.612 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513114329) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:32:09.098 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:32:09.098 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:32:09.104 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 12 Dec 21:32:09.104 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:01:33.420 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:01:33.420 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:01:33.420 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:33.423 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:33.423 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:33.423 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:33.423 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:33.423 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:33.423 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:33.424 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513882914) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:54.386 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:54.386 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:54.397 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:01:54.397 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:02:09.097 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:02:09.097 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:02:09.097 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:02:09.103 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:02:09.103 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:02:09.103 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:02:09.103 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:02:09.103 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:02:09.104 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:02:09.104 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:07:32.971 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:07:32.971 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:07:32.971 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:32.983 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:32.983 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:32.983 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:32.983 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:32.983 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:32.983 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:32.983 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1513883261) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:42.005 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:42.005 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:42.020 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:07:42.020 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:09:40.158 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:09:40.159 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 21 Dec 19:09:40.159 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:09:40.161 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:09:40.161 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:09:40.161 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:09:40.161 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:09:40.161 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:09:40.161 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 21 Dec 19:09:40.161 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:25:51.077 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:25:51.078 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:25:51.078 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:25:51.082 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:25:51.082 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:25:51.082 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:25:51.082 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:25:51.082 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:25:51.082 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:25:51.082 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:26:22.249 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:26:22.249 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:26:22.249 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:26:22.255 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:26:22.256 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:26:22.256 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:26:22.256 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:26:22.256 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:26:22.256 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:26:22.256 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:27:15.894 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:27:15.895 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:27:15.895 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:15.896 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:15.896 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:15.896 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:15.896 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:15.896 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:15.896 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:15.896 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1514388470) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:51.004 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:51.004 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:51.010 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:27:51.010 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:34:00.449 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:34:00.449 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:34:00.449 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:00.450 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:00.450 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:00.450 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:00.451 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:00.451 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:00.451 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:00.451 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1514388853) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:13.290 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:13.290 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:13.295 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:13.295 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:34:36.740 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:34:36.740 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 27 Dec 15:34:36.740 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:36.741 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:36.741 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:36.741 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:36.741 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:36.741 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:36.741 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:34:36.741 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1514389604) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:46:44.644 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:46:44.644 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:46:44.679 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 27 Dec 15:46:44.679 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 27 Dec 18:07:07.531 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 27 Dec 18:07:07.531 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 27 Dec 18:07:07.531 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 27 Dec 18:07:07.534 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 18:07:07.534 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 18:07:07.534 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 27 Dec 18:07:07.534 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 18:07:07.535 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 27 Dec 18:07:07.535 * DB loaded from disk: 0.001 seconds
+[34mpomanager-node-redis |[0m 1:M 27 Dec 18:07:07.535 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:52:38.613 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:52:38.613 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:52:38.613 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:53:13.778 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:53:13.778 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:53:13.778 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:53:13.780 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:53:13.780 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:53:13.780 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:53:13.780 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:53:13.780 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:53:13.780 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:53:13.780 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:55:25.470 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:55:25.470 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:55:25.470 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:25.472 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:25.473 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:25.473 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:25.473 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:25.473 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:25.473 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:25.473 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:55:57.671 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:55:57.672 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:55:57.672 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:57.673 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:57.673 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:57.673 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:57.673 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:57.674 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:57.674 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:55:57.674 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:56:28.927 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:56:28.927 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:56:28.927 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:56:28.928 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:56:28.928 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:56:28.928 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:56:28.928 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:56:28.928 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:56:28.929 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:56:28.929 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:57:44.483 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:57:44.483 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:57:44.483 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:57:44.484 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:57:44.484 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:57:44.484 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:57:44.485 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:57:44.485 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:57:44.485 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:57:44.485 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:58:46.824 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:58:46.824 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:58:46.824 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:58:46.825 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:58:46.825 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:58:46.825 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:58:46.825 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:58:46.825 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:58:46.825 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:58:46.825 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:59:03.920 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:59:03.920 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:59:03.920 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:03.922 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:03.923 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:03.923 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:03.923 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:03.923 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:03.923 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:03.923 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:59:20.677 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:59:20.677 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 20:59:20.677 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:20.679 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:20.679 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:20.679 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:20.679 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:20.680 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:20.680 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 20:59:20.680 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1519074032) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:32.501 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:32.501 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:32.508 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:32.508 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:00:47.814 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:00:47.814 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:00:47.814 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:47.816 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:47.816 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:47.816 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:47.816 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:47.816 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:47.816 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:00:47.816 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1519074130) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:10.555 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:10.555 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:10.562 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:10.563 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:02:23.496 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:02:23.496 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:02:23.496 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:23.498 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:23.498 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:23.498 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:23.498 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:23.498 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:23.498 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:02:23.498 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:03:15.405 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:03:15.405 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 19 Feb 21:03:15.405 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:03:15.407 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:03:15.407 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:03:15.407 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:03:15.407 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:03:15.407 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:03:15.407 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 19 Feb 21:03:15.407 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:signal-handler (1519078293) Received SIGTERM scheduling shutdown...
+[34mpomanager-node-redis |[0m 1:M 19 Feb 22:11:33.396 # User requested shutdown...
+[34mpomanager-node-redis |[0m 1:M 19 Feb 22:11:33.396 * Saving the final RDB snapshot before exiting.
+[34mpomanager-node-redis |[0m 1:M 19 Feb 22:11:33.401 * DB saved on disk
+[34mpomanager-node-redis |[0m 1:M 19 Feb 22:11:33.401 # Redis is now ready to exit, bye bye...
+[34mpomanager-node-redis |[0m 1:C 20 Feb 19:50:06.770 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 20 Feb 19:50:06.770 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 20 Feb 19:50:06.770 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:50:06.772 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:50:06.772 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:50:06.772 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:50:06.772 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:50:06.773 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:50:06.773 * DB loaded from disk: 0.001 seconds
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:50:06.773 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 20 Feb 19:51:24.605 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 20 Feb 19:51:24.605 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 20 Feb 19:51:24.605 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 20 Feb 19:51:24.606 * Ready to accept connections
+[34mpomanager-node-redis |[0m 1:C 20 Feb 20:54:05.334 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[34mpomanager-node-redis |[0m 1:C 20 Feb 20:54:05.334 # Redis version=4.0.2, bits=64, commit=00000000, modified=0, pid=1, just started
+[34mpomanager-node-redis |[0m 1:C 20 Feb 20:54:05.334 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[34mpomanager-node-redis |[0m 1:M 20 Feb 20:54:05.337 * Running mode=standalone, port=6379.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 20:54:05.337 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 20:54:05.337 # Server initialized
+[34mpomanager-node-redis |[0m 1:M 20 Feb 20:54:05.337 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 20:54:05.337 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[34mpomanager-node-redis |[0m 1:M 20 Feb 20:54:05.337 * DB loaded from disk: 0.000 seconds
+[34mpomanager-node-redis |[0m 1:M 20 Feb 20:54:05.337 * Ready to accept connections
+[33;1mpomanager-node-php-fpm |[0m [20-Feb-2018 20:54:05] NOTICE: fpm is running, pid 7
+[33;1mpomanager-node-php-fpm |[0m [20-Feb-2018 20:54:05] NOTICE: ready to handle connections
+[33;1mpomanager-node-php-fpm |[0m [20-Feb-2018 20:54:05] NOTICE: systemd monitor interval set to 10000ms
+[33;1mpomanager-node-php-fpm exited with code 137
+[0m
