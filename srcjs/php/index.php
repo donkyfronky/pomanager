@@ -31,5 +31,5 @@
 <body>
 <div id="container">
 </div>
-<script type="text/javascript" src="http://localhost:3001/build/editor/bundle.js"></script>
+<script type="text/javascript" src="http://www.pomanager.it:3001/js/dist/gigio/bundle.js"></script>
 </body>
