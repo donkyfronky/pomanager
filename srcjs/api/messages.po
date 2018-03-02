@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-17 16:59+0100\n"
+"PO-Revision-Date: 2014-03-17 16:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: Team \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: FI\n"
+
+msgid "Write"
+msgstr "Scrivi"
+
+msgid "and"
+msgstr "e"
+
+msgid "Earn"
+msgstr "Guadagna"
+
+msgid "with"
+msgstr "con"
+
+msgid "Join our community"
+msgstr ""
+
+msgid "click \" I Like \""
+msgstr ""
+
+msgid "Reach"
+msgstr ""
+
+msgid "readers"
+msgstr ""
+
+msgid "Earn up to"
+msgstr ""
+
+msgid "for article"
+msgstr ""
+
+msgid "Take our survey!"
+msgstr ""
+
+msgid "What is the best TV show?"
+msgstr ""
+
+msgid "To vote"
+msgstr ""
+
+msgid "click \"I Like\""
+msgstr ""
+
+msgid "under the TV show you prefer."
+msgstr ""
+
+msgid "What is your favourite TV soap?"
+msgstr ""
+
+msgid "Selected for you"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "Article"
+msgid_plural "Articles"
+msgstr[0] ""
+msgstr[1] ""
