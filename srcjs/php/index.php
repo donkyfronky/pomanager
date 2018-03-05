@@ -31,5 +31,6 @@
 <body>
 <div id="container">
 </div>
-<script type="text/javascript" src="http://www.pomanager.it:3001/js/dist/gigio/bundle.js"></script>
+<script type="text/javascript" src="http://www.pomanager.it:3001/build/vendor.js"></script>
+<script type="text/javascript" src="http://www.pomanager.it:3001/php/js/dist/mario/bundle.js"></script>
 </body>
