@@ -15,17 +15,8 @@ const { entry } = generateAppsConfig( []);
 
 entry.vendor = [
     'whatwg-fetch',
-    'react',
-    'react-redux',
-    'react-dom',
     'babel-polyfill',
-    'react-tap-event-plugin',
-    'redux-logger',
-    'redux-thunk',
-    // 'react-bootstrap',
-    // 'lodash',
-    'prop-types',
-    'react-hot-loader'
+    'prop-types'
 ];
 
 class WebpackDistConfig extends WebpackBaseConfig {

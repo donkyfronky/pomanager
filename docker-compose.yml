@@ -18,6 +18,7 @@ services:
        - "5858:5858"
        - "8082:80"
        - "3001:3001"
+       - "3002:3002"       
       volumes:
        - ./srcjs/:/usr/src/app/
       environment:

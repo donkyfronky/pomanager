@@ -2,8 +2,8 @@ var express = require('express'),
     app = express(),
     port = process.env.PORT || 80,
     mongoose = require('mongoose'),
-    Msgid = require('./api/models/msgidModel'), //created model loading here
-    User = require('./api/models/userModel'),
+    Msgid = require('./models/msgidModel'), //created model loading here
+    User = require('./models/userModel'),
     jsonwebtoken = require("jsonwebtoken"),
     bodyParser = require('body-parser');
 
@@ -37,12 +37,12 @@ app.use(function(req, res, next) {
     }
 });
 
-var routes = require('./api/routes/msgidRoutes'); //importing route
+var routes = require('./routes/msgidRoutes'); //importing route
 routes(app); //register the route
 
 
 app.listen(port);
 
 console.log('todo list RESTful API server started on: ' + port);
-/*var j = jsonwebtoken.sign({ email: 'dado', fullName: 'dado', _id: 'dado' }, 'RESTFULAPIs')
-console.log(j);*/
+var j = jsonwebtoken.sign({ email: 'dado', fullName: 'dado', _id: 'dado' }, 'RESTFULAPIs')
+console.log(j);

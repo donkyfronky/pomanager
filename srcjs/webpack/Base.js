@@ -43,6 +43,9 @@ class WebpackBaseConfig {
             devServer: {
                 contentBase: './src/',
                 publicPath: '/',
+                proxy: {
+                    '/js/*': 'http://0.0.0.0:3001/php/'
+                },
                 historyApiFallback: true,
                 hot: true,
                 inline: true,

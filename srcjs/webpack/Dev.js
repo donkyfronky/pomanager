@@ -11,7 +11,7 @@ const generateAppsConfig = require('./utils');
 
 
 const hmr = [
-    //'babel-polyfill',
+    'babel-polyfill',
     'react-hot-loader/patch',
     //'webpack-hot-middleware/client?noInfo=false'
 ];
@@ -21,15 +21,7 @@ const hmr = [
 const { entry } = generateAppsConfig(hmr);
 
 entry.vendor = [
-    'react',
-    'react-redux',
-    'react-dom',
     'babel-polyfill',
-    'react-tap-event-plugin',
-    'redux-logger',
-    'redux-thunk',
-    // 'react-bootstrap',
-    // 'lodash',
     'prop-types',
     'react-hot-loader'
 ];
