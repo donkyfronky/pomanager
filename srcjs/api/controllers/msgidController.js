@@ -2,24 +2,35 @@
 
 
 var mongoose = require('mongoose'),
-    Msgid = mongoose.model('Msgid');
+    Msgid = mongoose.model('Msgid'),
+    path = require('path');
 
 exports.list_all_Msgids = function(req, res) {
-    Msgid.find({}, function(err, Msgid) {
+    /*var gettextParser = require("gettext-parser");
+    var input = require('fs').readFileSync(path.resolve('./locale-tmp/it/LC_MESSAGES/messages.po'));
+    var po = gettextParser.po.parse(input);
+    res.json(po.translations[''])*/
+    Msgid.find({}, function(err, users) {
         if (err)
             res.send(err);
-        res.json(Msgid);
-    });
+        res.json(users);
+    })
 };
 
-exports.create_a_Msgid = function(req, res) {
-    console.log(req);
+exports.create_a_Msgid = function(req, res,next) {
     var new_Msgid = new Msgid(req.body);
-    new_Msgid.save(function(err, Msgid) {
-        if (err)
+    new_Msgid.save()
+        .then(res.send,e=>res.send(e))
+        .catch(next);
+    /*new_Msgid.save(function(err, Msgid) {
+        if (err) {
             res.send(err);
+        }else{
+            res.send(Msgid);
+        }
         res.json(Msgid);
-    });
+    }).then(next);*/
+
 };
 
 
@@ -28,7 +39,7 @@ exports.read_a_Msgid = function(req, res) {
         if (err)
             res.send(err);
         res.json(Msgid);
-    });
+    }).then(next);
 };
 
 
@@ -37,7 +48,7 @@ exports.update_a_Msgid = function(req, res) {
         if (err)
             res.send(err);
         res.json(Msgid);
-    });
+    }).then(next);
 };
 
 
@@ -50,7 +61,7 @@ exports.delete_a_Msgid = function(req, res) {
         if (err)
             res.send(err);
         res.json({ message: 'Msgid successfully deleted' });
-    });
+    }).then(next);
 };
 
 exports.search_a_Msgid = function (req,res) {
@@ -65,5 +76,5 @@ exports.search_a_Msgid = function (req,res) {
         if (err)
             res.send(err);
         res.json(Msgid);
-    });
+    }).then(next);
 };

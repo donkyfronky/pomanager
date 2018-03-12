@@ -3,19 +3,14 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var MsgstrSchema = new Schema({
-    msgid_ref:  {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Msgid',
-        index: true
-    },
-    msgid: {
+var LanguageSchema = new Schema({
+    language: {
         type: String,
         required: 'Kindly enter the name of the task',
         index: true
     },
-    msgid_plural: {
-            type: String
+    tld: {
+        type: String
     },
     Created_date: {
         type: Date,
@@ -23,4 +18,4 @@ var MsgstrSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Msgstr', MsgstrSchema);
+module.exports = mongoose.model('Language', LanguageSchema);

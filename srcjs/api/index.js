@@ -1,26 +1,38 @@
-var express = require('express'),
-    app = express(),
+let restify = require('restify'),
+    app = restify.createServer(),
     port = process.env.PORT || 80,
+    jsonwebtoken = require("jsonwebtoken"),
+    bodyParser = require('body-parser'),
     mongoose = require('mongoose'),
     Msgid = require('./models/msgidModel'), //created model loading here
     User = require('./models/userModel'),
-    jsonwebtoken = require("jsonwebtoken"),
-    bodyParser = require('body-parser');
+    Msgstr = require('./models/msgstrModel'),
+    Language = require('./models/languageModel'),
+    LanguageController = require('./controllers/LanguageController'),
+    MsgidContoller=require('./controllers/msgidController');
+
 
 var url = 'mongodb://mongo:27017/pomanager';
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 mongoose.connect(url);
-
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Authorization");
-    next();
+//req.accepts('application/json');
+const corsMiddleware = require('restify-cors-middleware');
+const cors = corsMiddleware({
+    'origins': ['*'],
+    allowHeaders: ['Authorization'],
 });
+app.pre(cors.preflight);
+app.use(cors.actual);
+
+app.use(restify.plugins.queryParser());
+app.use(restify.plugins.bodyParser({
+    multiples: true,
+    mapParams: true
+}));
+
+app.use(restify.plugins.fullResponse())
 
 app.use(function(req, res, next) {
     if (req.headers && req.headers.authorization && req.headers.authorization.split(' ')[0] === 'JWT') {
@@ -37,12 +49,22 @@ app.use(function(req, res, next) {
     }
 });
 
-var routes = require('./routes/msgidRoutes'); //importing route
-routes(app); //register the route
+
+/** msgid routes **/
+app.get('/msgids', MsgidContoller.list_all_Msgids);
+app.post('/msgids', MsgidContoller.create_a_Msgid);
+app.get('/msgids/:MsgidId',MsgidContoller.read_a_Msgid);
+app.put('/msgids/:MsgidId',MsgidContoller.update_a_Msgid);
+app.del('/msgids/:MsgidId',MsgidContoller.delete_a_Msgid);
+
+
+app.get('/languages',LanguageController.listLanguages)
+    //.post(userController.loginRequired, todoList.create_a_Msgid);
+app.post('/language',LanguageController.createLanguage);
+app.get('/language/:LanguageID',LanguageController.findLanguage)
+app.put('/language/:LanguageID',LanguageController.updateLanguage)
+app.del('/language/:LanguageID',LanguageController.deleteLanguage);
 
 
 app.listen(port);
-
 console.log('todo list RESTful API server started on: ' + port);
-var j = jsonwebtoken.sign({ email: 'dado', fullName: 'dado', _id: 'dado' }, 'RESTFULAPIs')
-console.log(j);

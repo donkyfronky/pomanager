@@ -27,9 +27,7 @@ services:
      
     mongo:
       image: mongo:3.4.10-jessie  
-      container_name: pomanager-node-mongo
-      volumes:
-      - ./datamongo:/data/db      
+      container_name: pomanager-node-mongo    
       ports:
         - "27017:27017"
       

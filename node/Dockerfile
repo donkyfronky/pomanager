@@ -1,4 +1,4 @@
-FROM node:9.2.0
+FROM node:9.8.0
 
 RUN mkdir -p /usr/src/app && mkdir -p /var/run/notifiche && mkdir -p /var/log/notifiche
 RUN chmod -R 777 /var/run/notifiche /var/log/notifiche
@@ -10,4 +10,4 @@ RUN npm install -g pm2
 #VOLUME /usr/src/app
 EXPOSE 9080
 
-CMD [ "npm", "start" ]
+#CMD [ "npm", "start" ]

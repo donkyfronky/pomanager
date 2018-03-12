@@ -7,7 +7,7 @@
 const webpack = require('webpack');
 const WebpackBaseConfig = require('./Base');
 const { resolve } = require('path');
-
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const generateAppsConfig = require('./utils');
 
 
@@ -16,7 +16,7 @@ const { entry } = generateAppsConfig( []);
 entry.vendor = [
     'whatwg-fetch',
     'babel-polyfill',
-    'prop-types'
+    'prop-types',
 ];
 
 class WebpackDistConfig extends WebpackBaseConfig {
@@ -39,25 +39,25 @@ class WebpackDistConfig extends WebpackBaseConfig {
                     minChunks: Infinity
                 }),
                 new webpack.optimize.AggressiveMergingPlugin(),
-                new webpack.optimize.UglifyJsPlugin({
-                    compress: {
-                        comparisons: true,
-                        conditionals: true,
-                        dead_code: true,
-                        drop_console: true, // Keep server logs
-                        drop_debugger: true,
-                        evaluate: true,
-                        if_return: true,
-                        join_vars: true,
-                        screw_ie8: false,
-                        sequences: true,
-                        unused: true,
-                        warnings: false,
-                    },
+
+                new UglifyJSPlugin({
+                    parallel:true,
                     sourceMap: false,
-                    output: {
-                        comments: false,
-                    },
+                    uglifyOptions: {
+                        compress: {
+                            comparisons: true,
+                            conditionals: true,
+                            dead_code: true,
+                            drop_console: true, // Keep server logs
+                            drop_debugger: true,
+                            evaluate: true,
+                            if_return: true,
+                            join_vars: true,
+                            sequences: true,
+                            unused: true,
+                            warnings: false,
+                        }
+                    }
                 }),
                 new webpack.NoEmitOnErrorsPlugin()
             ]

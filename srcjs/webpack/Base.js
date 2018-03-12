@@ -93,11 +93,11 @@ class WebpackBaseConfig {
                         test: /\.json$/,
                         loader: 'json-loader'
                     },
-                    {
+                    /*{
                         test: /\.(js|jsx)$/,
                         include: [].concat(this.includedPackages, [this.srcPathAbsolute]),
                         loaders: [{ loader: 'babel-loader' }]
-                    },
+                    },*/
                 ]
             },
             output: {
@@ -107,9 +107,9 @@ class WebpackBaseConfig {
             },
             plugins: [
                 new webpack.ProvidePlugin({
-                    $: 'jquery',
+                    /*$: 'jquery',
                     jQuery: 'jquery',
-                    'window.jQuery': 'jquery',
+                    'window.jQuery': 'jquery',*/
                     'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch',
                 }),
                 new webpack.DefinePlugin({
@@ -120,7 +120,7 @@ class WebpackBaseConfig {
             resolve: {
                 extensions: [
                     '.js',
-                    '.jsx'
+                    //'.jsx'
                 ],
                 modules: [
                     this.srcPathAbsolute,

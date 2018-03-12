@@ -118,3 +118,101 @@
 2018/03/07 21:28:47 [error] 6#6: *28 open() "/application/assets/js/vendor/popper.min.js" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /assets/js/vendor/popper.min.js HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
 2018/03/07 21:28:48 [error] 6#6: *28 open() "/application/dist/js/bootstrap.min.js" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /dist/js/bootstrap.min.js HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
 2018/03/08 20:14:58 [error] 7#7: *3 open() "/application/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /favicon.ico HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/09 19:55:13 [error] 6#6: *1 open() "/application/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /favicon.ico HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/09 21:06:11 [error] 6#6: *10 open() "/application/login" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /login HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/09 21:06:14 [error] 6#6: *10 open() "/application/login" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /login HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/10 12:37:02 [error] 7#7: *19 open() "/application/mario" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /mario HTTP/1.1", host: "www.pomanager.it"
+2018/03/11 09:23:36 [error] 7#7: *14 open() "/application/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /favicon.ico HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/11 10:11:47 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Warning:  explode() expects parameter 2 to be string, object given in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP   2. explode() /application/index.php:37
+PHP message: PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/11 10:11:55 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Warning:  explode() expects parameter 2 to be string, object given in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP   2. explode() /application/index.php:37
+PHP message: PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:12:26 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP Fatal error:  Uncaught Error: Class 'function($a){
+        echo 'mario';
+        print_r($a);
+    }' not found in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:12:27 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP Fatal error:  Uncaught Error: Class 'function($a){
+        echo 'mario';
+        print_r($a);
+    }' not found in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:12:27 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP Fatal error:  Uncaught Error: Class 'function($a){
+        echo 'mario';
+        print_r($a);
+    }' not found in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:12:27 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP Fatal error:  Uncaught Error: Class 'function($a){
+        echo 'mario';
+        print_r($a);
+    }' not found in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:12:27 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP Fatal error:  Uncaught Error: Class 'function($a){
+        echo 'mario';
+        print_r($a);
+    }' not found in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:12:27 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP Fatal error:  Uncaught Error: Class 'function($a){
+        echo 'mario';
+        print_r($a);
+    }' not found in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:12:27 [error] 7#7: *44 FastCGI sent in stderr: "PHP message: PHP Notice:  Undefined offset: 1 in /application/index.php on line 37
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /application/index.php:0
+PHP message: PHP Fatal error:  Uncaught Error: Class 'function($a){
+        echo 'mario';
+        print_r($a);
+    }' not found in /application/index.php:38
+Stack trace:
+#0 {main}
+  thrown in /application/index.php on line 38" while reading response header from upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.6:9000", host: "www.pomanager.it"
+2018/03/11 10:17:29 [error] 7#7: *58 open() "/application/msgids/2" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /msgids/2 HTTP/1.1", host: "www.pomanager.it"
+2018/03/11 13:39:23 [error] 7#7: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: www.pomanager.it, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.5:9000", host: "www.pomanager.it"
+2018/03/11 13:45:40 [error] 7#7: *12 open() "/application/edit" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /edit?msgid=undefined HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/11 13:48:28 [error] 7#7: *12 open() "/application/edit" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /edit?msgid=5a95c3604c4ba1014d7c34e6 HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/11 13:50:08 [error] 7#7: *71 open() "/application/edit" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /edit?msgid=5a9f0c0899bd6a0006c19397 HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/11 13:50:25 [error] 7#7: *71 open() "/application/edit" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /edit?msgid=5a9f0c0899bd6a0006c19397 HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
+2018/03/11 13:50:30 [error] 7#7: *71 open() "/application/edit" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /edit?msgid=5a9f0c0899bd6a0006c19397 HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
