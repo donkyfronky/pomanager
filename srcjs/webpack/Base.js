@@ -72,6 +72,7 @@ class WebpackBaseConfig {
             entry,
             module: {
                 rules: [
+                    { test: /\.handlebars$/, loader: "handlebars-loader" },
                     {
                         enforce: 'pre',
                         test: /\.js?$/,

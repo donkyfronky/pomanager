@@ -1,4 +1,5 @@
 var externalApi = require("../apiFunctions.js");
+let template = require("../../templates/base.handlebars");
 
 function popUl(elem){
     let table = document.getElementById('msgid-list');

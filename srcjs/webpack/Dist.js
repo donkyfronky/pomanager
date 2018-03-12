@@ -36,7 +36,7 @@ class WebpackDistConfig extends WebpackBaseConfig {
                 new webpack.optimize.CommonsChunkPlugin({
                     name: ['vendor'],
                     filename: 'php/js/dist/vendor.js',
-                    minChunks: Infinity
+                    minChunks: 2
                 }),
                 new webpack.optimize.AggressiveMergingPlugin(),
 
