@@ -3,3 +3,4 @@ node_modules
 output.txt
 locale-tmp
 *.lock
+srcjs/php/js/dist/
