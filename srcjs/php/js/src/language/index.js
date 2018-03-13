@@ -1,6 +1,11 @@
 import swal from 'sweetalert2'
 var externalApi = require("../apiFunctions.js");
+let menu_template = require("../../templates/menu.handlebars");
 
+
+
+var div = document.getElementById('menu-template');
+div.innerHTML = menu_template({language:true});
 
 function popUl(elem){
     let table = document.getElementById('msgid-list');

@@ -2,7 +2,7 @@
 
 
 var mongoose = require('mongoose'),
-    Msgid = mongoose.model('Msgstr'),
+    Msgstr = mongoose.model('Msgstr'),
     path = require('path');
 
 exports.create_a_Msgstr = function(req, res) {
@@ -16,10 +16,14 @@ exports.create_a_Msgstr = function(req, res) {
 };
 
 
-exports.read_a_Msgid = function(req, res) {
+exports.read_a_Msgstr = function(req, res) {
     Msgstr.findById(req.params.msgstrid, function(err, Msgstr) {
         if (err)
             res.send(err);
         res.json(new_Msgstr);
     });
+};
+
+exports.search_Msgstr_by_MsgidId = function(MsgidId) {
+    return Msgstr.find({'msgid_ref':MsgidId}).exec();
 };

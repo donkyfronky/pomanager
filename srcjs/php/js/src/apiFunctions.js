@@ -1,6 +1,5 @@
 import wretch from 'wretch';
 
-
 const Api = wretch()
     .auth('JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhZG8iLCJmdWxsTmFtZSI6ImRhZG8iLCJfaWQiOiJkYWRvIiwiaWF0IjoxNTIwMzcxODc4fQ.TP4qPWliOzjJeZib6RU91kvUuhVj7Yjug7Ll-G2F6R0');
 
@@ -43,10 +42,10 @@ module.exports = {
 };
 
 
-
+/*
 Array.from(document.getElementsByClassName('nav-link')).forEach(link => {
     link.addEventListener('click', function(event) {
         document.getElementsByClassName('nav-link active')[0].classList.remove('active')
         this.classList.add('active')
     });
-});
+});*/

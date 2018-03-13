@@ -58,6 +58,7 @@ class WebpackDevConfig extends WebpackBaseConfig {
             ],
             module: {
                 rules: [
+                    { test: /\.handlebars$/, loader: "handlebars-loader" },
                     {
                         test: /\.js$/,
                         loaders: ['react-hot-loader/webpack'],

@@ -3,6 +3,7 @@
 
 var mongoose = require('mongoose'),
     Msgid = mongoose.model('Msgid'),
+    MsgidStr=require('./msgstrController'),
     path = require('path');
 
 exports.list_all_Msgids = function(req, res) {
@@ -64,11 +65,35 @@ exports.delete_a_Msgid = function(req, res) {
     }).then(next);
 };
 
-exports.search_a_Msgid = function (req,res) {
-    console.log(req.query.name);
+exports.search_a_Msgid = function (req,res,next) {
+
+    let final_msgstr;
+
+    Msgid
+        .findById(req.params.MsgidId)
+        .then(Msgid=>{
+            console.log('msgid',Msgid)
+            final_msgstr = Msgid
+            return MsgidStr.search_Msgstr_by_MsgidId(Msgid._id)
+        })
+        .then(result=>{
+            console.log(result)
+            res.json({ msgid:final_msgstr,msgstr:result});
+            next()
+        }).catch(err=>{res.send(err);next()})
+/*
+    Msgid
+        .findOne({ _id: req.params.MsgidId })
+        .then(Msgid=>{search_Msgstr_by_MsgidId(Msgid._id)}
+            ,function(err) {
+            if (err)
+                res.send(err);
+            res.json(Msgid);
+        })*/
+    /*
     //{ $text: { $search: "java coffee shop" } }
-    Msgid.find({
-            name: new RegExp(req.query.name, "i")
+    Msgid.findOne({
+            _id: req.params.MsgidId
         },null,{sort: {
         Created_date:1
             }
@@ -76,5 +101,7 @@ exports.search_a_Msgid = function (req,res) {
         if (err)
             res.send(err);
         res.json(Msgid);
-    }).then(next);
+    }).populate('Msgstr').then(next,e=>res.send({'message':'msgid not found','error':e}));*/
+
+
 };

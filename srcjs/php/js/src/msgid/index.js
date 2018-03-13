@@ -1,5 +1,10 @@
 var externalApi = require("../apiFunctions.js");
-let template = require("../../templates/base.handlebars");
+let menu_template = require("../../templates/menu.handlebars");
+
+
+
+var div = document.getElementById('menu-template');
+div.innerHTML = menu_template({dashboard:true});
 
 function popUl(elem){
     let table = document.getElementById('msgid-list');

@@ -56,6 +56,7 @@ app.post('/msgids', MsgidContoller.create_a_Msgid);
 app.get('/msgids/:MsgidId',MsgidContoller.read_a_Msgid);
 app.put('/msgids/:MsgidId',MsgidContoller.update_a_Msgid);
 app.del('/msgids/:MsgidId',MsgidContoller.delete_a_Msgid);
+app.get('/msgid/:MsgidId',MsgidContoller.search_a_Msgid);
 
 
 app.get('/languages',LanguageController.listLanguages)
