@@ -2,7 +2,7 @@ import swal from 'sweetalert2'
 let externalApi = require("../apiFunctions.js");
 let utils = require('../utilsFunction')
 let menu_template = require("../../templates/menu.handlebars");
-import $ from 'domtastic';
+
 
 var div = document.getElementById('menu-template');
 div.innerHTML = menu_template({});

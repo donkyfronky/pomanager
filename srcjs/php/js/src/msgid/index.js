@@ -1,5 +1,7 @@
 var externalApi = require("../apiFunctions.js");
 let menu_template = require("../../templates/menu.handlebars");
+let utils = require('../utilsFunction')
+import swal from 'sweetalert2'
 
 
 
@@ -71,8 +73,44 @@ function  editMsgid(event,thatMsgid) {
         */
 }
 
-externalApi.loaderMsgidList().then(j => {
-    obj_list = Object.values(j);
-    popUl(obj_list)
-});
+document.getElementById('insert-msgid').addEventListener('click',e=>{
+    swal({
+        title: 'Insert the Index for translation',
+        input: 'textarea',
+        showCancelButton: true,
+        confirmButtonText: 'Submit',
+        showLoaderOnConfirm: true,
+        preConfirm: (given_data) => {
+            return new Promise((resolve) => {
+                    if (given_data === '') {
+                        swal.showValidationError(
+                            'Field is empty.'
+                        )
+                    }
+                    resolve()
+            })
+        },
+        allowOutsideClick: () => !swal.isLoading()
+    }).then((given_data) => {
+        if (given_data.value) {
+            return externalApi.createMsgid({
+            msgid:given_data.value,
+            msgid_plural:''
+            }).then(
+                msg=>{utils.simpleSuccessModal({message:'Success!'}).then(loaderMsgidList)},
+                err=>utils.simpleErrorModal(err)
+            )
+            .catch(err=>utils.simpleErrorModal(err))
+        }
+    }).then((t=>console.log(t)))
+})
+
+function loaderMsgidList() {
+    externalApi.loaderMsgidList().then(j => {
+        obj_list = Object.values(j);
+        popUl(obj_list)
+    });
+}
+
+loaderMsgidList();
 

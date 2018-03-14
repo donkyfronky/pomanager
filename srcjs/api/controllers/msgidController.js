@@ -19,9 +19,10 @@ exports.list_all_Msgids = function(req, res) {
 };
 
 exports.create_a_Msgid = function(req, res,next) {
+
     var new_Msgid = new Msgid(req.body);
     new_Msgid.save()
-        .then(res.send,e=>res.send(e))
+        .then(()=>{res.send({'response':'success'});next();},e=>res.send(e))
         .catch(next);
     /*new_Msgid.save(function(err, Msgid) {
         if (err) {

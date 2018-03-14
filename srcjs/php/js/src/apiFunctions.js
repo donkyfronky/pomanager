@@ -11,7 +11,7 @@ module.exports = {
                 .get()
                 .json()
     },
-    editMsgid: function(msgid)
+    createMsgid: function(msgid)
     {
     return Api
             .url('//api.pomanager.it/msgids')

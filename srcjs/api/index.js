@@ -1,5 +1,5 @@
 let restify = require('restify'),
-    app = restify.createServer(),
+    app = restify.createServer({handleUncaughtExceptions: true}),
     port = process.env.PORT || 80,
     jsonwebtoken = require("jsonwebtoken"),
     bodyParser = require('body-parser'),
@@ -9,6 +9,7 @@ let restify = require('restify'),
     Msgstr = require('./models/msgstrModel'),
     Language = require('./models/languageModel'),
     LanguageController = require('./controllers/LanguageController'),
+    errors = require('restify-errors'),
     MsgidContoller=require('./controllers/msgidController');
 
 
@@ -33,7 +34,13 @@ app.use(restify.plugins.bodyParser({
 }));
 
 app.use(restify.plugins.fullResponse())
-
+app.use((request,response,next)=>{
+    if(request.params.force_error){
+        next(new errors.BadRequestError('Madre'))
+    }else{
+        next()
+    }
+})
 app.use(function(req, res, next) {
     if (req.headers && req.headers.authorization && req.headers.authorization.split(' ')[0] === 'JWT') {
         console.log('verifico il token');
