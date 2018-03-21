@@ -1,210 +1,105 @@
-<html>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/dashboard/1-1/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/dashboard/1-1/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/dashboard/1-1/css/fontastic.css">
+    <!-- Google fonts - Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
 <body>
-<div id="container">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse bg-inverse fixed-top">
 
-
-    <h2>Users</h2>
-    <ul id="users_list"></ul>
-    <form id="users">
-        <input type="text" name="user_name" id="user_name">
-        <input type="submit" />
-        <span id="error_user"></span>
-    </form>
-
-
-    <h2>Tasks</h2>
-    <ul id="tasks_list"></ul>
-    <form id="tasks">
-        <input type="text" name="task_name" id="task_name">
-        <input type="submit" />
-        <span id="error_task"></span>
-    </form>
-
-
-
-    <h2>Tasks to users</h2>
-    <form id="tasks_to_user">
-
-        <select id="sel_users"></select>
-        <select id="sel_tasks"></select>
-        <div id="user_had_to"></div>
-    </form>
-
-
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="navbar-toggler-icon"></span>
+                </button> <a class="navbar-brand" href="#">Brand</a>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider">
+                                </div> <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" />
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">
+                            Search
+                        </button>
+                    </form>
+                    <ul class="navbar-nav ml-md-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider">
+                                </div> <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>
+                Heading
+            </h2>
+            <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+                <a class="btn" href="#">View details »</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>
+                Heading
+            </h2>
+            <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+                <a class="btn" href="#">View details »</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>
+                Heading
+            </h2>
+            <p>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+            <p>
+                <a class="btn" href="#">View details »</a>
+            </p>
+        </div>
+    </div>
 </div>
-<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="http"></script>
-<script>
 
-
-    var jwt = 'JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVhMjI3M2M4ODQ1NDIzMDA5NDA0M2Q0MSIsImhhc2hfcGFzc3dvcmQiOiIkMmEkMTAkNjJtVnJsZlVZSmxSU2x2LlZqd2tHdVRUM3ZER0pBU0UybkpJLkVncGVYaFE1VjRzZ3YzL0siLCJuaWNrIjoibWFyaW8iLCJmdWxsTmFtZSI6Ik1hcmlvIEJyZWdhIiwiZW1haWwiOiJtYXJpby5icmVnYUBsb2wuaXQiLCJfX3YiOjAsIm93blRhc2tzIjpbXSwiYWRtaW4iOmZhbHNlLCJjcmVhdGVkIjoiMjAxNy0xMi0wMlQwOTozNTowNC43NTBaIiwic3RhdHVzIjpbImFjdGl2ZSJdfSwiaWF0IjoxNTEyMjA3NTU3fQ.If3UkNAB8m2iuPpRiv_VFqPNL1iqcrIjCuEiGVsqdf4';
-    var users_saved = {};
-    var tasks_saved = {};
-
-    var selected_user = null;
-    var selected_task = null;
-
-    var ul_users = $('#users_list');
-    var ul_tasks = $('#tasks_list');
-
-    function loadUserSelects(){
-        var sel_users = $('#sel_users');
-
-        loadSelect(sel_users,users_saved);
-    }
-
-    function loadTaskSelects(){
-        var sel_tasks = $('#sel_tasks');
-
-        loadSelect(sel_tasks,tasks_saved);
-    }
-
-
-    function loadSelect(selectElement,dataList){
-
-        selectElement.html('');
-
-        selectElement.append('<option value="0">Seleziona</option>')
-
-        $.each(dataList,function(index,data){
-            selectElement.append('<option value="'+data._id+'">'+data.name+'</option>')
-        });
-    }
-
-    function loadUl(elementHtml,dataList){
-        elementHtml.html('');
-        $.each(dataList, function( index, data ) {
-            elementHtml.append('<li>'+data.name+'['+data.Created_date+']</li>');
-        });
-    }
-
-    function loadUsers(){
-        ul_users.html('');
-        $.ajax({
-            url: "/api/users",
-            data: {
-            },
-            headers: {"Authorization": jwt},
-            success: function( users ) {
-                users_saved = users;
-                loadUl(ul_users,users_saved);
-                loadUserSelects();
-            }
-        });
-    }
-
-    function loadTasks(){
-        ul_tasks.html('');
-        $.ajax({
-            url: "http://localhost:8080/tasks",
-            data: {
-            },
-            headers: {"Authorization": jwt},
-            success: function( tasks ) {
-                tasks_saved = tasks;
-                loadUl(ul_tasks,tasks_saved);
-                loadTaskSelects();
-            }
-        });
-    }
-
-
-
-    $('#users').on('submit',function(evt){
-        evt.preventDefault();
-        var new_user = $('#user_name').val();
-        var span_error_user = $('#error_user');
-
-        var error_user = '';
-        if(new_user===''){
-            error_user = 'il nome utente non può essere vuoto!';
-            span_error_user.html(error_user);
-            return;
-        }
-
-        $.ajax({
-            url: "http://localhost:8080/users",
-            type: 'post',
-            data: {
-                name:new_user
-            },
-            headers: {"Authorization": jwt},
-            success: function( users ) {
-                users_saved.push(users);
-                loadUsers(ul_users);
-
-            }
-        });
-
-    });
-
-    $('#tasks').on('submit',function(evt){
-        evt.preventDefault();
-        var new_task = $('#task_name').val();
-        var span_error_task = $('#task_user');
-
-        var error_task = '';
-        if(new_task===''){
-            error_task = 'il nome utente non può essere vuoto!';
-            span_error_task.html(error_task);
-            return;
-        }
-
-        $.ajax({
-            url: "http://localhost:8080/tasks",
-            type: 'post',
-            data: {
-                name:new_task
-            },
-            headers: {"Authorization": jwt},
-            success: function( tasks ) {
-                tasks_saved.push(tasks);
-                loadTasks(ul_tasks);
-
-            }
-        });
-
-    });
-
-    $('#sel_users').on('change',function(evt){
-
-        var that_user_id = $(this).val();
-        var user_task_list = $('#user_had_to');
-
-
-        selected_user = users_saved.filter(function( obj ) {
-            return obj._id===that_user_id;
-        });
-
-        if(selected_user!==[]) {
-            selected_user = selected_user[0];
-            $.each(selected_user.ownTasks, function (index, task) {
-                user_task_list.append('<p>- ' + task.name + '</p>');
-            });
-        }
-    });
-
-    $('#sel_tasks').on('change',function(evt){
-
-        var that_task_id = $(this).val();
-
-        selected_task = tasks_saved.filter(function( obj ) {
-            return obj._id===that_task_id;
-        });
-
-        if(selected_user!==[]) {
-            selected_task = selected_task[0];
-        }
-    });
-
-
-
-    //http://localhost/task/search/?name=ro
-    $(document).ready(function(){
-        loadUsers();
-        loadTasks();
-
-    });
-</script>
 </body>
 </html>

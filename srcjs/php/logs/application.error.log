@@ -223,3 +223,4 @@ Stack trace:
 2018/03/14 07:49:43 [error] 6#6: *1 open() "/application/webpack-dev-server" failed (2: No such file or directory), client: 10.0.1.1, server: www.pomanager.it, request: "GET /webpack-dev-server HTTP/1.1", host: "www.pomanager.it"
 2018/03/14 07:50:25 [error] 6#6: *1 open() "/application/webpack-dev-server" failed (2: No such file or directory), client: 10.0.1.1, server: www.pomanager.it, request: "GET /webpack-dev-server HTTP/1.1", host: "www.pomanager.it"
 2018/03/14 07:50:27 [error] 6#6: *1 open() "/application/webpack-dev-server" failed (2: No such file or directory), client: 10.0.1.1, server: www.pomanager.it, request: "GET /webpack-dev-server HTTP/1.1", host: "www.pomanager.it"
+2018/03/18 15:29:54 [error] 8#8: *2 open() "/application/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: www.pomanager.it, request: "GET /favicon.ico HTTP/1.1", host: "www.pomanager.it", referrer: "http://www.pomanager.it/"
